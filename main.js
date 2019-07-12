@@ -14,7 +14,7 @@ const {
     DRONE_BUILD_NUMBER
 } = process.env
 
-PLUGIN_ACCESS_TOKEN.split(',').array.forEach(async token => {
+PLUGIN_ACCESS_TOKEN.split(',').forEach(async token => {
     await axios.post('https://notify-api.line.me/api/notify',
         `message=
 Repo: ${DRONE_REPO_NAME}
