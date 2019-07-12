@@ -7,16 +7,19 @@
 *Drone 0.8*
 ```
 pipeline:
-    line-notify:
-        image: wei840222/drone-line-notify-plugin
-        access_token: accessToken1,accessToken2...
+  line-notify:
+    image: wei840222/drone-line-notify-plugin
+    access_token: accessToken1,accessToken2...
 ```
 
 *Drone 1.x*
 ```
-pipeline:
-    line-notify:
-        image: wei840222/drone-line-notify-plugin
-        settings:
-            access_token: accessToken1,accessToken2...
+kind: pipeline
+name: default
+
+steps:
+- name: line-notify
+  image: wei840222/drone-line-notify-plugin
+  settings:
+    access_token: accessToken1,accessToken2...
 ```
