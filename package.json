@@ -2,6 +2,6 @@
   "name": "drone-line-flex-notify-plugin",
   "version": "1.0.0",
   "dependencies": {
-    "axios": "^0.21.2"
+    "axios": "^1.6.0"
   }
 }
